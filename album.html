@@ -226,6 +226,7 @@ function eaTurnBendy(dir,plainBack){
     tsh.className='ea-tshade l';
   }
   flip.classList.add('show'); eaSound();
+  var eaWd=setTimeout(function(){ if(!eaBusy)return; flip.classList.remove('show'); segA.style.transform=''; segB.style.transform=''; segC.style.transform=''; tsh.style.opacity=0; eaDone(target); },1300);
   var sign=dir==='next'?-1:1, t0=null, DUR=700;
   function frame(ts){
     if(!t0)t0=ts;
@@ -239,7 +240,7 @@ function eaTurnBendy(dir,plainBack){
     AB.style.filter='brightness('+sb+')'; BB.style.filter='brightness('+sb+')'; CB.style.filter='brightness('+sb+')';
     tsh.style.opacity=(.5*s).toFixed(3);
     if(p<1){requestAnimationFrame(frame);}
-    else{ flip.classList.remove('show'); segA.style.transform=''; segB.style.transform=''; segC.style.transform=''; tsh.style.opacity=0; eaDone(target); }
+    else{ clearTimeout(eaWd); flip.classList.remove('show'); segA.style.transform=''; segB.style.transform=''; segC.style.transform=''; tsh.style.opacity=0; eaDone(target); }
   }
   requestAnimationFrame(frame);
 }
@@ -266,6 +267,7 @@ function eaTurnRigid(dir,frontImg){
     tsh.className='ea-tshade l';
   }
   cf.classList.add('show'); eaSound();
+  var eaWdR=setTimeout(function(){ if(!eaBusy)return; cf.classList.remove('show'); cf.style.transform=''; ff.style.filter=''; tsh.style.opacity=0; eaDone(target); },1100);
   var sign=dir==='next'?-1:1, t0=null, DUR=600;
   function frame(ts){
     if(!t0)t0=ts;
@@ -275,7 +277,7 @@ function eaTurnRigid(dir,frontImg){
     ff.style.filter='brightness('+(1-.28*s)+')';
     tsh.style.opacity=(.45*s).toFixed(3);
     if(p<1){requestAnimationFrame(frame);}
-    else{ cf.classList.remove('show'); cf.style.transform=''; ff.style.filter=''; tsh.style.opacity=0; eaDone(target); }
+    else{ clearTimeout(eaWdR); cf.classList.remove('show'); cf.style.transform=''; ff.style.filter=''; tsh.style.opacity=0; eaDone(target); }
   }
   requestAnimationFrame(frame);
 }
