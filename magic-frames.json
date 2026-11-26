@@ -1,0 +1,7 @@
+{
+  "targetsUrl": "https://uniquevisuals.github.io/uv-media/magic/targets.mind",
+  "frames": [
+    { "name": "Magic Frame - Sample (Couple)", "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/couple.mp4", "aspect": 1.55 },
+    { "name": "Diya Demo", "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/diya.mp4", "aspect": 0.974471 }
+  ]
+}
