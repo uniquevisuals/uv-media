@@ -1,7 +1,31 @@
 {
   "targetsUrl": "https://uniquevisuals.github.io/uv-media/magic/targets.mind",
   "frames": [
-    { "name": "Magic Frame - Sample (Couple)", "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/couple.mp4", "aspect": 1.55 },
-    { "name": "Diya Demo", "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/diya.mp4", "aspect": 0.974471 }
+    {
+      "name": "Magic Frame - Sample (Couple)",
+      "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/couple.mp4",
+      "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/magic-frame-sample-couple.mind",
+      "aspect": 1.55
+    },
+    {
+      "name": "Diya Demo",
+      "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/diya.mp4",
+      "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/diya-demo.mind",
+      "aspect": 0.974471
+    },
+    {
+      "id": "aaa",
+      "name": "AAA",
+      "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/aaa.mp4",
+      "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/aaa.mind",
+      "aspect": 0.642
+    },
+    {
+      "id": "bbb",
+      "name": "BBB",
+      "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/bbb.mp4",
+      "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/bbb.mind",
+      "aspect": 1.4995
+    }
   ]
 }
