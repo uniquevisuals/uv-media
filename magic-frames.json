@@ -26,6 +26,13 @@
       "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/bbb.mp4",
       "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/bbb.mind",
       "aspect": 1.4995
+    },
+    {
+      "id": "ccc",
+      "name": "CCC",
+      "videoUrl": "https://uniquevisuals.github.io/uv-media/magic/ccc.mp4",
+      "mindUrl": "https://uniquevisuals.github.io/uv-media/magic/mind/ccc.mind",
+      "aspect": 0.7958
     }
   ]
 }
