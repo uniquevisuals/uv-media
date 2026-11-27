@@ -156,7 +156,7 @@ else{
     document.getElementById('eaAlbumTitle').textContent=ALBUM.title||'E-Album';
     var th=document.getElementById('eaThanks'); var tt=ALBUM.customer?('Thanks '+ALBUM.customer):(ALBUM.thanks||''); if(tt){ th.textContent=tt; th.style.display='block'; }
     document.getElementById('eaTeaserImg').src=ALBUM.front;
-    if(ALBUM.passwordHash && sessionStorage.getItem('ea-unlock-'+eaId)!=='1'){
+    if(ALBUM.passwordHash){ /* ask password on EVERY entry — no unlock persistence */
       document.getElementById('eaLock').style.display='block';
     }else{
       document.getElementById('eaMain').style.display='block';
@@ -185,7 +185,6 @@ function eaUnlock(){
   var pw=document.getElementById('eaPw').value;
   sha256hex(pw).then(function(h){
     if(h===ALBUM.passwordHash){
-      sessionStorage.setItem('ea-unlock-'+eaId,'1');
       document.getElementById('eaLock').style.display='none';
       document.getElementById('eaMain').style.display='block';
     }else{
